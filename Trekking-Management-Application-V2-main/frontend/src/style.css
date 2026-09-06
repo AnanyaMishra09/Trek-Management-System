@@ -1,0 +1,155 @@
+:root {
+  --bs-primary: #2f6f4f;
+  --bs-primary-rgb: 47, 111, 79;
+  --bs-body-bg: #f6f7f5;
+  --bs-border-radius: 0.6rem;
+  --bs-border-radius-sm: 0.45rem;
+  --bs-border-radius-lg: 0.85rem;
+}
+
+body {
+  color: #26312c;
+}
+
+/* navbar */
+.navbar.bg-dark {
+  --bs-bg-opacity: 1;
+  background: linear-gradient(90deg, #1f3d2c, #2f6f4f) !important;
+}
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.navbar-dark .nav-link {
+  color: rgba(244, 196, 122, 0.75);
+  transition: color 0.15s ease;
+}
+.navbar-dark .nav-link:hover {
+  color: #f4c47a;
+}
+.navbar-dark .router-link-active.nav-link {
+  color: #fff3d6;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-color: #f4c47a;
+}
+
+/* cards */
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.card.trek-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* stat tiles */
+.stat-tile {
+  border: none;
+  background: white;
+}
+.stat-tile .stat-icon {
+  font-size: 1.4rem;
+  color: var(--bs-primary);
+}
+
+/* tables */
+.table-wrap {
+  background: white;
+  border-radius: var(--bs-border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.table-wrap table {
+  margin-bottom: 0;
+}
+.table thead th {
+  background: #eef2ee;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #4b5a52;
+  border-bottom: none;
+}
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+/* buttons */
+.btn {
+  border-radius: var(--bs-border-radius-sm);
+}
+.btn-primary {
+  --bs-btn-hover-bg: #26593f;
+  --bs-btn-hover-border-color: #26593f;
+}
+
+/* auth pages */
+.auth-shell {
+  background: linear-gradient(rgba(10, 25, 17, 0.15), rgba(10, 25, 17, 0.35)), url("/trek-bg.svg");
+  background-size: cover;
+  background-position: center;
+}
+.auth-card {
+  border: none;
+  border-top: 5px solid #7a5c42;
+  border-radius: var(--bs-border-radius-lg);
+  background: #f4f2ec;
+}
+.auth-card .form-control {
+  background: #fbfaf6;
+  border-color: #d8d2c2;
+}
+.auth-card .form-control:focus {
+  border-color: #7a5c42;
+  box-shadow: 0 0 0 0.2rem rgba(122, 92, 66, 0.18);
+}
+.auth-mark {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+/* difficulty badges */
+.badge-easy {
+  background: #2f6f4f;
+}
+.badge-moderate {
+  background: #b8860b;
+}
+.badge-hard {
+  background: #b3402e;
+}
+
+/* trek card banner (user-facing, eye-catching) */
+.trek-banner {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  border-radius: var(--bs-border-radius-lg) var(--bs-border-radius-lg) 0 0;
+}
+.trek-banner.easy {
+  background: linear-gradient(135deg, #2f6f4f, #4f9c73);
+}
+.trek-banner.moderate {
+  background: linear-gradient(135deg, #b8860b, #d9a441);
+}
+.trek-banner.hard {
+  background: linear-gradient(135deg, #8f2c1c, #b3402e);
+}
+.card.trek-card {
+  overflow: hidden;
+}
+
+/* modal polish */
+.modal-content {
+  border: none;
+  border-radius: var(--bs-border-radius-lg);
+}

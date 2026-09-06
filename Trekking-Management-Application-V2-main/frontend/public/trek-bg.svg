@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a3a5c" />
+      <stop offset="45%" stop-color="#4a7a6f" />
+      <stop offset="75%" stop-color="#e8a15c" />
+      <stop offset="100%" stop-color="#f4c47a" />
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3d6" stop-opacity="0.95" />
+      <stop offset="60%" stop-color="#f7c873" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#f7c873" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5c8a78" />
+      <stop offset="100%" stop-color="#3d6656" />
+    </linearGradient>
+    <linearGradient id="mid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#37624f" />
+      <stop offset="100%" stop-color="#254539" />
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f3d2e" />
+      <stop offset="100%" stop-color="#12261c" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)" />
+
+  <circle cx="1220" cy="480" r="220" fill="url(#sun)" />
+  <circle cx="1220" cy="480" r="70" fill="#fff3d6" opacity="0.9" />
+
+  <!-- far ridge -->
+  <path
+    d="M0,460 L120,370 L260,440 L420,320 L560,420 L720,300 L900,430 L1080,340 L1250,440 L1400,350 L1600,430 L1600,900 L0,900 Z"
+    fill="url(#far)"
+    opacity="0.9"
+  />
+
+  <!-- mid ridge with snow caps -->
+  <path
+    d="M0,600 L180,460 L320,560 L500,410 L640,540 L820,390 L980,540 L1160,430 L1320,560 L1480,450 L1600,540 L1600,900 L0,900 Z"
+    fill="url(#mid)"
+  />
+  <path
+    d="M500,410 L545,455 L465,466 Z M820,390 L868,438 L784,446 Z M1160,430 L1204,470 L1124,477 Z"
+    fill="#f4f7f2"
+    opacity="0.9"
+  />
+
+  <!-- near ridge -->
+  <path
+    d="M0,760 L220,630 L400,730 L620,600 L800,720 L1020,610 L1220,730 L1420,630 L1600,710 L1600,900 L0,900 Z"
+    fill="url(#near)"
+  />
+
+  <!-- winding trail -->
+  <path
+    d="M280,900 C400,780 360,670 500,580 C630,500 620,440 740,400"
+    fill="none"
+    stroke="#f4c47a"
+    stroke-width="6"
+    stroke-linecap="round"
+    stroke-dasharray="2 22"
+    opacity="0.7"
+  />
+</svg>
